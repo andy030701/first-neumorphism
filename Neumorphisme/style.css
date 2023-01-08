@@ -1,0 +1,60 @@
+/*tout ce qui se trouve dans la page*/
+*{
+    margin: 0;
+    list-style: none;/*enleve les points dans les li dans ul*/
+}
+
+/*centre l'ul dans le body*/
+body{
+    background-color: #dde1e7;/*couleur du body sera grise*/
+    height: 100vh;/*la hauteur sera 100% des son element parent*/
+    display: flex;/*le body sera en flex pour centrer ses elements enfant*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*centrer les li dans la liste ul*/
+ul{
+    display: flex;/*on met ul en mode flex*/
+    justify-content: center;/*centre le contenu dans ul*/
+}
+
+
+/*les li*/
+li{
+    margin: 20px;/*marges externes des li*/
+    height: 100px;/*hauteurs des li a 100px*/
+    width: 100px;/*largeurs des li a 100px*/
+    /* background-color: red;background en rouge */
+    display: flex;
+    justify-content: center;/*centrer horizontalement les elements dans les li*/
+    align-items: center;/*centrer verticalement les elements dans les li*/
+    border-radius: 162px;/*radius a 162px pour effectuer des cercles parfaits*/
+    background: #dde1e7;
+    box-shadow: 5px 5px 8px #cbcfd5, -5px -5px 8px #eff3f9;
+    cursor: pointer;
+}
+
+/*les li qd la souris passe au dessus*/
+li:hover{
+   box-shadow: inset 5px 5px 8px #cbcfd5,
+            inset -5px -5px 8px #eff3f9; 
+}
+
+/*les icones*/
+i{
+    font-size: 2em;
+}
+
+li:nth-child(1) i{
+    color: #0080f7;
+}
+li:nth-child(2) i{
+    color: #41d251;
+}
+li:nth-child(3) i{
+   color: #f70000; 
+}
+li:nth-child(4) i{
+   color: #dd2a7b; 
+}
